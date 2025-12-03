@@ -30,29 +30,29 @@ It integrates with the **Shopify Admin API**, ingests Customers / Products / Ord
 # ✅ **Features Implemented**
 
 ## **Phase 1 — Backend System**
-
-*✔ Shopify Admin API Integration
-*✔ Fetch Customers / Products / Orders
-*✔ Save to DB using Prisma
-*✔ Upsert logic → prevents duplicates
-*✔ Auto-Sync every 1 hour (Cron job)
-*✔ Tenant Registration API
-*✔ Modular route structure
-*✔ Error handling + logging
-
+```
+✔ Shopify Admin API Integration
+✔ Fetch Customers / Products / Orders
+✔ Save to DB using Prisma
+✔ Upsert logic → prevents duplicates
+✔ Auto-Sync every 1 hour (Cron job)
+✔ Tenant Registration API
+✔ Modular route structure
+✔ Error handling + logging
+```
 ---
 
 ## **Phase 2 — Frontend Dashboard**
-
-*✔ Responsive Admin Dashboard
-*✔ Sidebar Navigation
-*✔ Animated KPI Cards
-*✔ ApexCharts Graphs
-*✔ Customer Table with Search
-*✔ Manual “Sync Now” button
-*✔ Clean modern UI (bold fonts, spacing, layout)
-*✔ Zero-scroll perfect layout
-
+```
+✔ Responsive Admin Dashboard
+✔ Sidebar Navigation
+✔ Animated KPI Cards
+✔ ApexCharts Graphs
+✔ Customer Table with Search
+✔ Manual “Sync Now” button
+✔ Clean modern UI (bold fonts, spacing, layout)
+✔ Zero-scroll perfect layout
+```
 ---
 
 # 📁 **Project Structure**
