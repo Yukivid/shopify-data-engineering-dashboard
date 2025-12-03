@@ -245,8 +245,11 @@ http://localhost:5173
 You will see:
 
 ✔ Sidebar
+
 ✔ Dashboard Cards
+
 ✔ Revenue Chart
+
 ✔ Customer Table
 
 All data comes directly from Shopify → Prisma → React dashboard.
