@@ -1,0 +1,16 @@
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.customer-table th, 
+.customer-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.customer-table th {
+  background: #e9eef5;
+  text-align: left;
+}

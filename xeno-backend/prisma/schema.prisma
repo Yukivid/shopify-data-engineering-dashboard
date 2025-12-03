@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+
+
+model Tenant {
+  id         Int        @id @default(autoincrement())
+  name       String
+  storeUrl   String
+  apiToken   String
+
+  customers  Customer[]
+  products   Product[]     // FIXED: Added missing relation
+  orders     Order[]
+}
+
+model Customer {
+  id         Int      @id @default(autoincrement())
+  tenantId   Int
+  shopifyId  String   @unique
+  email      String?
+  firstName  String?
+  lastName   String?
+  totalSpent Float?
+  createdAt  DateTime @default(now())
+
+  Tenant     Tenant   @relation(fields: [tenantId], references: [id])
+}
+
+model Product {
+  id         Int      @id @default(autoincrement())
+  tenantId   Int
+  shopifyId  String   @unique
+  title      String
+  price      Float?
+
+  Tenant     Tenant   @relation(fields: [tenantId], references: [id])
+}
+
+model Order {
+  id         Int      @id @default(autoincrement())
+  tenantId   Int
+  shopifyId  String   @unique
+  totalPrice Float?
+  createdAt  DateTime
+
+  Tenant     Tenant   @relation(fields: [tenantId], references: [id])
+}

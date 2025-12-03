@@ -1,0 +1,18 @@
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 230px; /* match sidebar width */
+  padding: 30px 40px;
+  width: calc(100% - 230px); /* 🔥 Fix empty space */
+  background: #f3f6fb;
+  min-height: 100vh;
+  font-size: 18px; /* Global bigger font */
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}

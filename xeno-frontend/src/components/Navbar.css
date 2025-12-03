@@ -1,0 +1,19 @@
+.navbar {
+  width: 100%;
+  padding: 18px 30px;
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .admin-text {
+  font-weight: 700;        /* 🔥 Make bold */
+  font-size: 18px;         /* 🔥 Bigger */
+  color: #333;
+  margin-right: 10px;
+}

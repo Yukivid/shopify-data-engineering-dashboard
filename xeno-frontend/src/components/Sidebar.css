@@ -1,0 +1,39 @@
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background-color: #0f1e36;
+  padding: 25px 20px;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.sidebar .section-title {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #9db4d1;
+  letter-spacing: 1px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 14px 0;
+  color: #d4e2f7;
+  font-size: 17px;               /* Bigger */
+  font-weight: 600;              /* Bolder */
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #ffffff;
+  transform: translateX(4px);
+}
